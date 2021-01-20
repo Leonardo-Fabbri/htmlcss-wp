@@ -2,21 +2,33 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .container {
-  width: 50%;
+  width: 45%;
   height: 100vh;
   margin: 0 auto;
   background-color: white;
 }
-
-
 .menù{
   width: 100%;
-  height: 5vh;
-  background-color: yellow;
+  height: 10vh;
+  background-color: white;
   border-radius: 4px;
+  padding-bottom: 1px;
+  padding-left: 1vh;
+}
+.logo {
+  width: 90px;
+  height: 5vh;
+}
+ul > li , a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  color: lightgray;
+  padding: 5px;
 }
 
 main::after {
@@ -27,18 +39,43 @@ main::after {
 
 .secondo-blocco {
   width: 100%;
-  height: 35vh;
-  background-color: lightgreen;
-  margin-top: 1vh;
+  height: 45vh;
+  background-color:lightgreen;
+  margin-top: 3vh;
   border-radius: 4px;
+  background-image: url("./banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  position: relative;
+
+}
+.testo {
+  width: 40%;
+  height: 70px;
+  position: absolute;
+  bottom: 1vh;
+  margin-left: 3vh;
+  margin-bottom: 4vh;
+  color: white;
+}
+h2 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 10px;
+  color: rgb(192,192,192);
 }
 
 .blocco-float {
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   background-color: white;
-  margin-top: 1vh;
+  margin-top: 2vh;
   float: left;
+  background-color: white;
+  padding: 10px;
 }
 
 .box{
@@ -47,35 +84,89 @@ main::after {
 .sopra-float {
   width: 100%;
   height: 6vh;
-  background-color: rgb(0,225,0);
+  background-color: white;
   margin-bottom: 1%;
   border-radius: 4px;
+}
+div > p {
+  color: lightgray;
+  font-size: 14px;
+  border-top: 1px;
 }
 
 .sinistra-float ,
 .destra-float {
   width: 25%;
-  height: 43vh;
-  background-color: rgb(150,225,0);
+  height: 55vh;
+  background-color: white;
   margin-bottom: 2vh;
   border-radius: 4px;
+  padding: 5px;
+  display: inline-block;
+}
+.sfondo {
+  background-image: url("./img-1.jpg");
+  background-blend-mode: multiply;
+  background-color: lightgreen;
+  background-size: cover;
+  width: 90%;
+  height: 160px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 5px;
 }
 
+#text{
+  font-size: 15px;
+  color: rgb(192,192,192);
+
+}
+
+.sfondo-2 {
+  background-image: url("./img-3.jpg");
+  background-blend-mode: multiply;
+  background-color: lightgreen;
+  background-size: cover;
+  width: 90%;
+  height: 160px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
 
 .centro-float {
   width: 46%;
-  height: 43vh;
-  background-color: rgb(150,225,150);
+  height: 55vh;
+  background-color: white;
   margin: 0 2%;
   border-radius: 4px;
+  display: inline-block;
+}
+.sfondo-3{
+  background-image: url("banner-2.jpg");
+  background-blend-mode: multiply;
+  background-color: lightgreen;
+  background-size: cover;
+  width: 95%;
+  height: 160px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 5px;
 }
 
 
 footer {
   width: 100%;
-  height: 5vh;
-  background-color: red;
+  height: 4vh;
+  background-color: white;
   margin-top: 2vh;
-  border-radius: 4px;
-  /* display: inline-block */
+  display: inline-block;
+  text-align: center;
+}
+
+footer > p {
+  font-size: 15px;
+}
+span{
+  color: red;
 }
